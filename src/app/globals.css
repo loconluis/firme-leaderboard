@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  /* Base colors - Dark gray theme for better readability */
+  --color-background: #0d0d0d;
+  --color-surface: #141414;
+  --color-surface-elevated: #1a1a1a;
+
+  /* Accent colors - Volt Green theme */
+  --color-volt: #d8f200;
+  --color-volt-dark: #a6b800;
+  --color-volt-light: #e8ff4d;
+
+  /* Text colors - improved contrast */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #b0b0b0;
+  --color-text-muted: #707070;
+
+  /* Borders */
+  --color-border: #2a2a2a;
+
+  /* Fonts */
+  --font-family-display: var(--font-bebas), system-ui, sans-serif;
+}
+
+:root {
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-bebas: "Bebas Neue", system-ui, sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #FFFFFF;
+  font-family: var(--font-inter);
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Minimal scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out forwards;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
