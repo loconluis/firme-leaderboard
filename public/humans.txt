@@ -1,0 +1,13 @@
+/* TEAM */
+	Developer: Firme Challenge Team
+	Site: https://firme-challenge.com
+	Location: Mexico
+	Language: Spanish
+
+/* SITE */
+	Last update: 2026/03/05
+	Language: Spanish (Mexico)
+	Doctype: HTML5
+	IDE: VS Code
+	Framework: Next.js 16
+	Styling: Tailwind CSS 4

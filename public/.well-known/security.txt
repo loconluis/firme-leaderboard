@@ -1,0 +1,4 @@
+Contact: security@firmechallenge.com
+Expires: 2027-03-05T23:59:00.000Z
+Preferred-Languages: es, en
+Canonical: https://firmechallenge.com/.well-known/security.txt
